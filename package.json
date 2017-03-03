@@ -30,9 +30,10 @@
     "url": "git+https://github.com/jshanson7/debounce-action.git"
   },
   "keywords": [
-    "action",
     "debounce",
+    "action",
     "redux",
+    "thunk",
     "lodash"
   ]
 }
