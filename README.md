@@ -1,6 +1,6 @@
 # Debounce Action [![NPM version][npm-image]][npm-url]
 
-Create debounced [redux-thunk](https://github.com/gaearon/redux-thunk) actions.
+Create debounced [redux-thunk](https://github.com/gaearon/redux-thunk) actions.  Debounced actions will delay being dispatched until after `wait` milliseconds have elapsed since the last time the debounced action was dispatched.
 
 ## Installation
 
