@@ -1,6 +1,6 @@
 {
   "name": "debounce-action",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Create a debounced Redux action",
   "main": "lib/index.js",
   "scripts": {
