@@ -31,7 +31,7 @@ function incrementThunk() {
 const incrementDebounced = debounceAction(increment, 1000);
 const incrementThunkDebounced = debounceAction(incrementThunk, 5000, {leading: true});
 
-// call debounced actions
+// call debounced actions like normal redux actions
 import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers';
