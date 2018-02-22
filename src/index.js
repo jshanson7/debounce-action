@@ -11,8 +11,10 @@ export default function debounceAction(action, wait, options) {
   // see: https://github.com/gaearon/redux-thunk
   const thunk = (...actionArgs) => dispatch => debounced(dispatch, actionArgs);
 
-  // provide hook to _.debounce().cancel() to cancel any trailing invocations
+  // provide hook to _.debounce().cancel() to cancel any trailing invocations or
+  // _.debounce().flush() to execute it immediately
   thunk.cancel = debounced.cancel;
+  thunk.flush = debounced.flush;
 
   return thunk;
 }
